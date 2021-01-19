@@ -1,0 +1,34 @@
+{
+  "name": "com.pixeldog.jwplayer",
+  "displayName": "JWPlayer",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "a": "rmdir \"./plugins/cordova-jwplayer\" /q /s && cordova platform remove android && cordova platform add android && cls && cordova run android --device",
+    "aa": "cordova platform remove android && cordova platform add android && cls && cordova run android --device"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^9.0.0",
+    "cordova-jwplayer": "file:../JWPlayer",
+    "cordova-plugin-whitelist": "^1.3.4",
+    "cordova-volume-slider": "file:../VolumeSlider",
+    "temperature": "git+https://github.com/droidada/cordovatemperatureplugin.git"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-jwplayer": {},
+      "cordova-plugin-whitelist": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {}
+}
